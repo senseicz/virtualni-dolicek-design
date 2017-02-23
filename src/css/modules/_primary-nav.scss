@@ -1,0 +1,85 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+
+.dropdown-menu .sub-menu {
+  left: 99%;
+  position: absolute;
+  top: 0;
+}
+
+.primary-nav {
+	.icon-after:after {
+		margin-right: 0;
+		position: relative;
+		top: -1px;
+	}
+
+	.icon-home:after {
+		@extend %icon-home-outline-grey;
+	}
+
+	.icon-chevron-down:after {
+		@extend %icon-chevron-down-grey;
+	}
+
+	.icon-chevron-right:after {
+		@extend %icon-chevron-right-grey;
+	}
+
+	@include media(0, $screen-md-max) {
+		.icon-chevron-down:after {
+			display: none;
+		}
+	}
+
+	@include media(0, $screen-xs-max) {
+		padding-left: 0;
+		padding-right: 0;
+
+		.list-unstyled {
+			> li {
+				> a {
+					display: block;
+				}
+			}
+		}
+
+		.icon-home:after {
+			display: none;
+		}
+
+		.openedSubmenu {
+			padding-left: 15px;
+		}
+	}
+
+	@include media($screen-sm-min) {
+		.list-unstyled {
+			margin-left: -$space-md;
+			margin-bottom: 0;
+
+			> li {
+				padding: 0;
+
+				> a {
+					display: inline-block;
+					padding: ($space-sm + 1) $space-sm ($space-sm - 1);
+
+					&.icon-after {
+						padding-right: $space-xs;
+					}
+				}
+			}
+		}
+
+		.icon-home {
+			&:after {
+				margin-left: 0;
+			}
+
+			.label {
+				@include sr-only;
+			}
+		}
+	}
+}

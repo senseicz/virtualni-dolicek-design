@@ -1,0 +1,23 @@
+@import "utilities/variables";
+
+.match-stats {
+	margin-bottom: $space-xl;
+	background: $whitesmoke;
+	padding: $panel-body-padding;
+
+	.list-key-value {
+		dt:after {
+			content: ':';
+			margin-right: 1ex;
+		}
+
+		dd:after {
+			margin: $space-xs 0;
+			border-bottom: 1px solid $white;
+		}
+
+		dd:last-child:after {
+			display: none;
+		}
+	}
+}

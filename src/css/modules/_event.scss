@@ -1,0 +1,153 @@
+@import "utilities/variables";
+@import "elements/references";
+@import "elements/coverage";
+
+.event {
+	&:hover, &:focus {
+		&, .reference {
+			text-decoration: none;
+		}
+	}
+
+	.title {
+		font-family: 'Roboto Condensed';
+		margin: 0 0 $space-sm;
+		font-weight: 700;
+	}
+
+	.datetime {
+		float: right;
+	}
+
+	&.live {
+		.datetime {
+			font-family: 'Roboto Condensed';
+			background: $red;
+			color:$white;
+			padding: 0 $space-xs;
+		}
+
+		.score {
+			color: $red;
+		}
+
+		.coverage {
+			font-family: 'Roboto Condensed';
+			margin-bottom: 0;
+			padding: $space-xs 0;
+			border-bottom: 1px solid $whitesmoke;
+		}
+	}
+
+	.score {
+		@include text-lg;
+		font-weight: 700;
+		font-family: 'Roboto Condensed';
+	}
+
+	.teams {
+		clear: both;
+		position: relative;
+		padding-left: 80px;
+		text-align: center;
+		border-bottom: 1px solid $whitesmoke;
+		padding-bottom: $space-xs;
+
+		.team-logo {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.team ~ .team {
+			.team-logo {
+				left: 40px;
+			}
+		}
+	}
+
+	.reference {
+		float: right;
+		text-decoration: underline;
+	}
+}
+
+.event-external-link {
+	display: inline-block;
+	margin-top: $space-sm;
+	text-decoration: underline;
+
+	&:hover, &:focus {
+		text-decoration: none;
+	}
+
+	&.icon-ticket:before {
+		@extend %icon-ticket-confirmation-grey;
+		margin-top: -2px;
+	}
+
+	&.icon-match:before {
+		@extend %icon-soccer-grey;
+	}
+
+	&.text-distinct {
+		background: $yellow;
+
+		&, &:hover, &:focus {
+			color: $black;
+		}
+	}
+}
+
+.events-list {
+	li {
+		margin-bottom: $space-sm;
+	}
+
+	.event {
+		display: block;
+	}
+
+	a.event:hover, a.event:focus {
+		background: $whitesmoke;
+	}
+
+	.day {
+		text-transform: uppercase;
+	}
+
+	.datetime {
+		font-family: 'Roboto Condensed';
+		float: left;
+		background: $green;
+		color:$white;
+		padding: 0 $space-xs;
+		margin-right: $space-sm;
+	}
+
+	.teams {
+		padding-left: 0;
+		text-align: left;
+	}
+
+	.team-logo, .event-external-link, .reference {
+		display: none;
+	}
+
+	.team {
+		display: inline-block;
+	}
+
+	.team + .team {
+		&:before {
+			content: ':';
+		}
+	}
+
+	.score {
+		@include text-bs;
+		font-weight: 400;
+		font-family: $font-family-sans-serif;
+	}
+}

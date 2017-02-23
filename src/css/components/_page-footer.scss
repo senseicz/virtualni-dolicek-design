@@ -1,0 +1,102 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// Page Footer // --------------------------------------------------
+.w-page-footer {
+	width: 100%;
+	padding-bottom: $space-xl;
+	margin-top: $space-xl;
+	background: $gainsboro;
+	border-top: 1px solid $silver;
+}
+
+.m-page-footer {
+	text-align: center;
+	@include text-xs;
+
+	small {
+		font-size: 100%;
+	}
+
+	.legal-nav {
+		&, & a {
+			color: $grey;
+		}
+
+		a {
+			text-decoration: underline;
+
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+	}
+
+	.copyright {
+	}
+
+	.sponsors {
+		padding-top: $space-xl;
+		margin-bottom: $space-md;
+
+		img {
+			filter: grayscale(100%);
+			opacity: 0.5;
+			transition: opacity 1s;
+		}
+
+		a:hover, a:focus {
+			img {
+				filter: none;
+				opacity: 1;
+			}
+		}
+	}
+
+	.address {
+		padding-top: $space-xl;
+	}
+
+	.social-nav {
+		.list-inline {
+			margin: $space-sm 0 0;
+		}
+
+		a {
+      filter: grayscale(100%);
+			opacity: 0.5;
+			transition: opacity 1s;
+
+			&:hover, &:focus {
+        filter: none;
+				opacity: 1;
+			}
+		}
+
+    .icon:before {
+      margin-right: 0;
+    }
+
+    .icon-facebook:before {
+      @extend %icon-facebook-box-blue;
+    }
+
+    .icon-twitter:before {
+      @extend %icon-twitter-box-blue;
+    }
+
+    .icon-youtube:before {
+      @extend %icon-youtube-play-red;
+    }
+
+    .icon-instagram:before {
+      @extend %icon-instagram-grey;
+    }
+  }
+
+	@include media(0, $screen-xs-max) {
+		.text-left, .text-right {
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,55 @@
+@import "utilities/variables";
+
+$tag-height: $grid-unit * 6;
+$tag-decoration: $grid-unit * 2;
+
+.tags {
+  list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.tags li {
+  float: left;
+}
+
+.tag {
+  background: $whitesmoke;
+  display: inline-block;
+  padding: 0 $space-xl;
+	margin: 0 $space-xs $space-xs 0;
+  position: relative;
+  text-decoration: none;
+	line-height: $tag-height;
+
+	&:before, &:after {
+		content: '';
+		background: $white;
+		position: absolute;
+	}
+
+	&:before {
+	  border-radius: 50%;
+		width: $tag-decoration;
+	  height: $tag-decoration;
+		left: ($tag-height - $tag-decoration) / 2;
+	  top: ($tag-height - $tag-decoration) / 2;
+	}
+
+	&:after {
+	  border-bottom: $tag-height / 2 solid transparent;
+	  border-left: $tag-decoration solid $whitesmoke;
+	  border-top: $tag-height / 2 solid transparent;
+	  right: 0;
+	  top: 0;
+	}
+
+	&:hover, &:focus {
+		text-decoration: none;
+		background-color: $gainsboro;
+
+		&:after {
+			border-left-color: $gainsboro;
+		}
+	}
+}

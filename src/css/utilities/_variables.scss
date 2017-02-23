@@ -1,0 +1,67 @@
+@import "utilities/colors";
+
+// Paths // --------------------------------------------------------------------
+$font-path: '../font/';
+$img-path: '../img/';
+$icon-path: $img-path;
+
+// Typography // ---------------------------------------------------------------
+$font-family-sans-serif: 'Roboto', Helvetica, Arial, sans-serif;
+$btn-font-weight: 400;
+
+$font-sizes: (
+  xxxl: 32px,
+	xxl: 24px,
+	xl: 20px,
+	lg: 16px,
+	md: 14px,
+	bs: 13px,
+	sm: 12px,
+	xs: 11px
+);
+
+$font-size-large: map-get($font-sizes, lg) !default;
+$font-size-base: map-get($font-sizes, bs) !default;
+$font-size-small: map-get($font-sizes, sm) !default;
+
+$line-heights: (
+	xxxl: 40px / map-get($font-sizes, xxxl),
+	xxl: 32px / map-get($font-sizes, xxl),
+	xl: 24px / map-get($font-sizes, xl),
+	lg: 22px / map-get($font-sizes, lg),
+	md: 21px / map-get($font-sizes, md),
+	bs: 20px / map-get($font-sizes, bs),
+	sm: 19px / map-get($font-sizes, sm),
+	xs: 18px / map-get($font-sizes, xs)
+);
+
+$line-height-large: map-get($line-heights, lg) !default;
+$line-height-base: map-get($line-heights, bs) !default;
+$line-height-small: map-get($line-heights, sm) !default;
+
+// Border radius // ------------------------------------------------------------
+$border-radius-small: 0;
+$border-radius-base: 0;
+$border-radius-large: 0;
+
+// Grid & Spacing // -----------------------------------------------------------
+$grid-unit: 4px;
+$space-xs: $grid-unit;
+$space-sm: $grid-unit * 2;
+$space-md: $grid-unit * 3;
+$space-lg: $grid-unit * 4;
+$space-xl: $grid-unit * 5;
+
+$padding-base-vertical: $space-sm - 1;
+$padding-base-horizontal: $space-md;
+
+$grid-gutter-width: $space-md;
+$panel-body-padding: $space-lg;
+
+// Animations // ------------------------------------------------------
+$animateIn: 0.25s;
+$animateOut: 0.25s;
+$ease-elastic: cubic-bezier(0.5, -0.5, 0.5, 1.5) !default;
+
+// Import default bootstrap variables // ---------------------------------------
+@import "bootstrap-sass/assets/stylesheets/bootstrap/variables";

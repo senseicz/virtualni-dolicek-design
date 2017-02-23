@@ -1,0 +1,150 @@
+@import "bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "utilities/variables";
+@import "utilities/images";
+@import "utilities/mixins";
+@import "modules/logo";
+@import "modules/skip-links";
+@import "modules/primary-nav";
+@import "modules/search";
+
+// Page Header // --------------------------------------------------
+.w-page-header {
+  position: relative;
+  padding: $panel-body-padding 0 0;
+  background: $panel-bg;
+  border-bottom: 1px solid $green;
+  margin-bottom: $grid-gutter-width * 2;
+}
+
+.m-page-header {
+  a {
+    color: $dimgray;
+  }
+
+	.navbar {
+		border: 0;
+		margin-bottom: $space-md;
+	}
+
+	.navbar-toggle {
+		margin: 0;
+
+		.icon-bar {
+			background-color: $grey;
+		}
+	}
+
+  .social-nav {
+    text-align: right;
+
+		a {
+      filter: grayscale(100%);
+			opacity: 0.5;
+			transition: opacity 1s;
+
+			&:hover, &:focus {
+        filter: none;
+				opacity: 1;
+			}
+		}
+
+    .icon:before {
+      margin-right: 0;
+    }
+
+    .icon-facebook:before {
+      @extend %icon-facebook-box-blue;
+    }
+
+    .icon-twitter:before {
+      @extend %icon-twitter-box-blue;
+    }
+
+    .icon-youtube:before {
+      @extend %icon-youtube-play-red;
+    }
+
+    .icon-instagram:before {
+      @extend %icon-instagram-grey;
+    }
+  }
+
+	@include media(0, $screen-xs-max) {
+		.navbar-collapse {
+			clear: both;
+		}
+
+		.list-unstyled {
+			margin: 0;
+
+			> li {
+				> a {
+					display: block;
+					border-top: 1px solid $whitesmoke;
+					padding: $space-sm;
+				}
+			}
+		}
+	}
+
+	@include media($screen-sm-min) {
+		.navbar-collapse {
+			padding-left: 0;
+			padding-right: 0;
+		}
+
+		.list-unstyled {
+			float: none;
+
+			> li {
+				display: inline-block;
+				float: none;
+			}
+
+			&.account {
+				margin-bottom: 10px;
+
+				> li {
+					padding-left: 5px;
+					padding-right: 5px;
+				}
+			}
+		}
+
+		.primary-navigation, .user-actions  {
+	    text-transform: uppercase;
+	    font-weight: 300;
+	    @include text-xs;
+	  }
+
+		.user-actions {
+	    text-align: right;
+	    margin-left: 300px;
+	    padding-left: $space-md;
+
+			.list-unstyled {
+				display: inline-block;
+	      margin-left: 0;
+			}
+
+	    .lang + .account {
+	      &:before {
+	        content: '|';
+	      }
+	    }
+
+	    .link {
+	      color: $brand-primary;
+	    }
+	  }
+
+		.search {
+			float: right;
+			position: relative;
+			right: -5px;
+			top: -36px;
+			margin-bottom: -36px;
+		}
+	}
+}

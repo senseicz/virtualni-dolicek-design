@@ -1,0 +1,97 @@
+@import "utilities/variables";
+@import "utilities/animations";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "elements/time";
+@import "elements/lists";
+
+th {
+	text-align: inherit;
+}
+
+.table {
+	font-family: 'Roboto Condensed';
+	@include text-sm;
+
+	> thead > tr > th {
+		background: $onyx;
+		color: $white;
+		border-bottom: 4px solid $green;
+	}
+
+	> tbody > tr > td {
+		border: 0;
+	}
+
+	> tbody > tr.highlight {
+		&, &:nth-of-type(odd) {
+			background: $green;
+			color: $white;
+		}
+	}
+
+	&.week {
+		th, td {
+			width: percentage(1/7);
+		}
+
+		td {
+			border-top: 1px solid $gainsboro;
+
+			&:nth-child(odd) {
+				background: $whitesmoke;
+			}
+		}
+	}
+}
+
+.table.table-calendar {
+	text-align: center;
+
+	> thead > tr > th {
+		&:last-child {
+			border-right: 1px solid $onyx;
+		}
+	}
+
+	> tbody > tr > td {
+		border: 1px solid $gainsboro;
+		padding: 0;
+	}
+
+	.date {
+		display: block;
+		padding: $space-sm;
+		width: 100%;
+	}
+
+	.events {
+		display: none;
+	}
+}
+
+.table-responsive {
+	position: relative;
+
+	&:after {
+		content: '';
+		width: 100%;
+		height: 50%;
+		@include center;
+		@extend %icon-gesture-swipe-left-orange;
+		background-size: contain;
+		background-position: 50% 50%;
+		background-repeat: no-repeat;
+		opacity: 0;
+		display: none;
+	}
+}
+
+@include media(0, $screen-xs-max) {
+	.table-responsive:after {
+		display: block;
+	}
+
+	.isInViewport:after {
+		animation: fadeOut 6s;
+	}
+}

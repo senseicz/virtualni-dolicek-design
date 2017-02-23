@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Virtuální Ďolíček - www stránky Bohemians Praha 1905</title>
+	<!--#include file="_favicon.html" -->
+</head>
+<body>
+	<div class="w-page">
+		<!--#include file="_page-header.html" -->
+		<div class="w-page-content" id="Content">
+			<div class="container">
+				<h1>Alerty</h1>
+				<div class="alert alert-success alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</p>
+				</div>
+				<div class="alert alert-info alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</p>
+				</div>
+				<div class="alert alert-warning alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</p>
+				</div>
+				<div class="alert alert-danger alert-dismissible fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+					<p><strong>Holy guacamole!</strong> Best check yo self, you're not looking too good.</p>
+				</div>
+				<h1>Formuláře</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="row">
+							<form class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+								<div class="form-group">
+									<label for="exampleInputEmail1" class="control-label">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+								</div>
+								<div class="form-group">
+									<label for="exampleInputEmail2" class="control-label">Invalid email address</label>
+									<input type="email" class="form-control error" id="exampleInputEmail2" placeholder="Email" value="foo">
+									<label id="exampleInputEmail2-error" class="error" for="exampleInputEmail2">Please enter a valid email address</label>
+								</div>
+								<div class="form-group">
+									<label for="exampleInputPassword1" class="control-label">Password</label>
+									<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								</div>
+								<div class="checkbox">
+									<label>
+										<input type="checkbox"> Check me out
+									</label>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+								<div class="login-external">
+									<a href="https://account.fc-bohemians.cz/core/external?provider=Facebook&amp;signin=b18208e03ff6ac0a4846934d80bc70ad" class="btn btn-default btn-lg"><i class="icon icon-facebook"></i>Přihlásit přes Facebook</a>
+									<a href="https://account.fc-bohemians.cz/core/external?provider=Google&amp;signin=b18208e03ff6ac0a4846934d80bc70ad" class="btn btn-default btn-lg"><i class="icon icon-google"></i>Přihlásit přes Google</a>
+									<a href="https://account.fc-bohemians.cz/core/external?provider=Twitter&amp;signin=b18208e03ff6ac0a4846934d80bc70ad" class="btn btn-default btn-lg"><i class="icon icon-twitter"></i>Přihlásit přes twitter</a>
+								</div>
+							</form>
+							<div class="row">
+								<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+									<form class="form-inline">
+										<div class="form-group">
+											<label for="year" class="control-label">Rok</label>
+											<select class="form-control" id="year">
+												<option>2016</option>
+											</select>
+										</div>
+										<div class="form-group">
+											<label for="month" class="control-label">Měsíc</label>
+											<select class="form-control" id="month">
+												<option>srpen</option>
+												<option>září</option>
+												<option>říjen</option>
+											</select>
+										</div>
+										<button type="submit" class="btn btn-primary">Zobrazit</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<h1>Taby</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<!-- Nav tabs -->
+						<ul class="nav nav-tabs" role="tablist">
+							<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+							<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+							<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+							<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+						</ul>
+						<!-- Tab panes -->
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="home">A</div>
+							<div role="tabpanel" class="tab-pane" id="profile">B</div>
+							<div role="tabpanel" class="tab-pane" id="messages">C</div>
+							<div role="tabpanel" class="tab-pane" id="settings">D</div>
+						</div>
+					</div>
+				</div>
+				<h1>Stránkování</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<nav aria-label="Page navigation">
+						  <ul class="pagination">
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+					</div>
+				</div>
+				<h1>Hodnocení</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="rating">
+							<h3 class="sr-only">Ohodnoť</h3>
+						  <ul class="values">
+								<li class="icon"><a href="#">5</a></li>
+								<li class="icon"><a href="#">4</a></li>
+								<li class="icon voted"><a href="#">3</a></li>
+								<li class="icon"><a href="#">2</a></li>
+						    <li class="icon"><a href="#">1</a></li>
+						  </ul>
+						</div>
+					</div>
+				</div>
+				<h1>Tabulky</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="table-responsive">
+							<!--#include file="_table-match.html" -->
+						</div>
+					</div>
+				</div>
+				<h1>Komentáře</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<!--#include file="_comment-post.html" -->
+					</div>
+				</div>
+				<h1>Fotky</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<!--#include file="_photos.html" -->
+					</div>
+				</div>
+				<h1>Video</h1>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<!--#include file="_videos.html" -->
+					</div>
+				</div>
+			</div>
+			<!--#include file="_page-footer.html" -->
+		</div>
+	</div>
+	<!--#include file="_js.html" -->
+</body>
+</html>

@@ -1,0 +1,87 @@
+@import "utilities/variables";
+
+.social-item {
+	margin-bottom: $space-md;
+	border-top: 1px solid $gainsboro;
+	padding-top: $space-sm;
+
+	.panel-header + & {
+		border: 0;
+	}
+
+	.image, .header {
+		margin-bottom: $space-sm;
+		overflow: hidden;
+	}
+
+	.image img {
+		max-width: 100%;
+	}
+
+	.real-name {
+		@include text-lg;
+		display: block;
+		font-weight: 700;
+		font-family: 'Roboto Condensed';
+	}
+
+	.avatar {
+		width: 32px;
+		height: 32px;
+		float: left;
+		margin-right: 5px;
+		position: relative;
+		overflow: hidden;
+		top: 5px;
+	}
+
+	.real-name, .username, .content {
+		@include word-wrap;
+	}
+
+	.twitter-intent {
+		float: right;
+
+		li {
+			padding: 0;
+		}
+
+		.icon {
+			opacity: 0.5;
+
+			&:hover, &:focus {
+				opacity: 1;
+			}
+		}
+	}
+
+	.icon-facebook:before {
+		@extend %icon-facebook-box-blue;
+	}
+
+	.icon-instagram:before {
+		@extend %icon-instagram-grey;
+	}
+
+	.icon-twitter:before {
+		@extend %icon-twitter-box-blue;
+	}
+
+	.icon-reply {
+		&:before {
+			@extend %icon-reply-grey;
+		}
+	}
+
+	.icon-retweet {
+		&:before {
+			@extend %icon-twitter-retweet-grey;
+		}
+	}
+
+	.icon-like {
+		&:before {
+			@extend %icon-star-grey;
+		}
+	}
+}

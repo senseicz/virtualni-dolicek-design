@@ -1,0 +1,11 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+
+// JS visibility toggle // --------------------------------------------------
+.visible-js, .js .hidden-js {
+	display: none;
+}
+.js .visible-js, .hidden-js {
+	display: initial;
+}

@@ -1,0 +1,22 @@
+<div class="w-article-list">
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<!--#include file="_article-link.shtml" -->
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<!--#include file="_article-link.shtml" -->
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<!--#include file="_article-link.shtml" -->
+		</div>
+	</div>
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<!--#include file="_article-link.shtml" -->
+		</div>
+	</div>
+</div>

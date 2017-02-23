@@ -1,0 +1,44 @@
+@import "utilities/variables";
+
+.article-link {
+	display: block;
+
+	&:focus, &:hover {
+		text-decoration: none;
+
+		.title {
+			text-decoration: underline;
+		}
+	}
+}
+
+.article {
+	.header, .subheader {
+		font-family: 'Roboto Condensed';
+	}
+
+	.subheader {
+		margin: $space-sm 0;
+		font-weight: 700;
+	}
+
+	.title {
+		margin: 0 0 $space-sm;
+		font-weight: 700;
+	}
+
+	.time {
+		display: inline-block;
+		background: $green;
+		color:$white;
+		padding: 0 $space-xs;
+	}
+
+	.icon-photo:before {
+		@extend %icon-camera-grey;
+	}
+
+	.icon-video:before {
+		@extend %icon-video-grey;
+	}
+}

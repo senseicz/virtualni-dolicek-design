@@ -1,0 +1,63 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/modals";
+
+// Alert // --------------------------------------------------
+.modal-backdrop.fade.in {
+	opacity: 0.65;
+}
+
+.modal {
+	.modal-content {
+		border: 0;
+
+		iframe {
+			border: 0;
+			width: 100%;
+			display: block;
+		}
+	}
+
+	.close {
+		opacity: 1;
+		position: absolute;
+		top: 0;
+		right: $space-sm;
+		color: #fff;
+		text-shadow: 0 1px 0 rgba($black, 0.2);
+		font-size: 32px;
+	}
+
+	@include media($screen-sm-min) {
+		.modal-dialog {
+			width: 600px;
+		}
+
+		.modal-content {
+			iframe {
+				min-height: 300px;
+			}
+		}
+	}
+
+	@include media($screen-md-min) {
+		.modal-dialog {
+			width: 800px;
+		}
+
+		.modal-content {
+			iframe {
+				min-height: 400px;
+			}
+		}
+	}
+}
+
+.modal-iframe {
+	margin: 0;
+	padding: 0;
+
+	a, img {
+		display: block;
+		max-width: 100%;
+	}
+}

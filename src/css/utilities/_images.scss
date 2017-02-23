@@ -1,0 +1,58 @@
+@import "utilities/variables";
+
+// Images color variants map
+$variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $white, grey: $grey, black: $black);
+
+// SVG image // ------------------------------------------------------
+
+@mixin svg-image($name, $color) {
+	background-image: svg-load(unquote("#{$img-path}#{$name}.svg, fill=#{$color}"));
+}
+
+// Image color variants // ------------------------------------------------------
+@mixin image-variants($name, $colors) {
+	@each $variant, $i in $colors {
+			%#{$name}-#{$variant} {
+				@include svg-image($name, $i);
+			}
+	}
+}
+
+// Usage: @extend %(name)-(variant)
+// e.g. @extend %icon-email-blue
+@include image-variants(logo, (green: $bohemians-green, grey: $grey, gainsboro: $gainsboro));
+@include image-variants(icon-magnify, $variants);
+@include image-variants(icon-soccer, (whitesmoke: $whitesmoke, grey: $grey));
+@include image-variants(icon-gift, (grey: $grey));
+@include image-variants(icon-home-outline, (grey: $grey));
+@include image-variants(icon-account-multiple-outline, (grey: $grey));
+@include image-variants(icon-chevron-up, $variants);
+@include image-variants(icon-chevron-down, $variants);
+@include image-variants(icon-chevron-left, $variants);
+@include image-variants(icon-chevron-right, $variants);
+@include image-variants(icon-ticket-confirmation, $variants);
+@include image-variants(icon-reply, $variants);
+@include image-variants(icon-star, $variants);
+@include image-variants(icon-twitter-retweet, $variants);
+@include image-variants(icon-camera, $variants);
+@include image-variants(icon-video, $variants);
+@include image-variants(icon-file-excel, $variants);
+@include image-variants(icon-file-pdf, $variants);
+@include image-variants(icon-file-powerpoint, $variants);
+@include image-variants(icon-file-word, $variants);
+@include image-variants(icon-thumb-down-outline, $variants);
+@include image-variants(icon-thumb-up-outline, $variants);
+@include image-variants(icon-trophy-variant, $variants);
+@include image-variants(icon-swap-horizontal, $variants);
+@include image-variants(icon-whistle, $variants);
+@include image-variants(icon-hospital, $variants);
+@include image-variants(icon-kangaroo, $variants);
+@include image-variants(icon-gesture-swipe-left, $variants);
+@include image-variants(icon-account-circle, $variants);
+@include image-variants(icon-plus-circle-outline, $variants);
+@include image-variants(icon-alert-circle-outline, $variants);
+@include image-variants(icon-facebook-box, (blue: $facebook-blue));
+@include image-variants(icon-instagram, (grey: $instagram-grey));
+@include image-variants(icon-twitter-box, (blue: $twitter-blue));
+@include image-variants(icon-google-plus-box, (red: $google-plus-red));
+@include image-variants(icon-youtube-play, (red: $youtube-play-red));

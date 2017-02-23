@@ -1,0 +1,29 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/images";
+
+// Icons // --------------------------------------------------
+.icon:before, .icon-after:after {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 20px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+
+.icon:before {
+	margin-right: $space-xs;
+}
+
+.icon-after {
+  &:before {
+  	display: none;
+  }
+
+  &:after {
+  	margin-left: $space-xs;
+  }
+}

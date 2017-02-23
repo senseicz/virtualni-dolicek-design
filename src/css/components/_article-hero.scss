@@ -1,0 +1,68 @@
+@import "utilities/variables";
+
+.w-article-hero {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: $white;
+	position: relative;
+	padding-top: 250px;
+	@extend .panel;
+
+	.article-link {
+		color: $white;
+	}
+
+	.article {
+		height: 100px;
+		background: rgba(0,0,0,0.65);
+		padding: $space-md $panel-body-padding $space-xl;
+
+		.icon-photo:before {
+			@extend %icon-camera-white;
+		}
+
+		.icon-video:before {
+			@extend %icon-video-white;
+		}
+	}
+
+	.title {
+		@include text-xxxl;
+	}
+
+	.image {
+		display: none;
+	}
+
+	.icon {
+		margin-left: $space-sm;
+
+		+ .icon {
+			margin-left: 0;
+		}
+	}
+
+	.time, .author {
+		float: left;
+		margin-right: $space-xs;
+	}
+
+	.author {
+		&:after {
+			content: ':';
+		}
+	}
+
+	@include media(0, $screen-sm-max) {
+		padding-top: 120px;
+
+		.article {
+			height: 120px;
+		}
+
+		.title {
+			@include text-xl;
+		}
+	}
+}

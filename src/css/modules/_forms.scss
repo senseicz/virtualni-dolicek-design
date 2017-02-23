@@ -1,0 +1,68 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/forms";
+
+// Forms & Form fields // --------------------------------------------------
+.form-inline {
+	margin-bottom: $space-xl;
+}
+
+textarea.form-control {
+	resize: vertical;
+}
+
+legend.control-label {
+	border: 0;
+	max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+	margin-bottom: 0;
+}
+
+.form-control, .form-control:focus {
+	box-shadow: none;
+}
+
+.form-control {
+	option {
+		color: $dimgray;
+	}
+}
+
+.form-actions {
+	padding-top: $space-md;
+	margin-bottom: $space-sm;
+
+	.btn {
+		margin-bottom: $space-xs;
+	}
+}
+
+.form-inline .form-group {
+	vertical-align: top;
+
+	+ .btn {
+		margin-left: $space-xs;
+	}
+}
+
+label.error {
+	@include text-sm;
+	font-weight: 400;
+	color: $brand-danger;
+}
+
+input.error {
+	&, &:focus {
+		border-color: $brand-danger;
+	}
+}
+
+.form-inline {
+	.control-label {
+		margin-right: $space-xs;
+	}
+
+	.form-group + .form-group {
+		 .control-label {
+			 margin-left: $space-sm;
+		 }
+	}
+}

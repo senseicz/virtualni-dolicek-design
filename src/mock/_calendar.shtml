@@ -1,0 +1,25 @@
+<h3 class="panel-header">Kalendář bohemáka | 21. srpna 2016</h3>
+<div class="calendar">
+	<ul class="events-list list-unstyled">
+	  <li class="icon icon-match">
+	    <!--#include file="_future-event.html" -->
+	  </li>
+	  <li class="icon icon-match">
+	    <!--#include file="_future-event.html" -->
+	  </li>
+		<li class="icon icon-birthday">
+			Narozeniny David Vrána, 32 let
+		</li>
+		<li class="icon icon-meetup">
+			<time class="datetime" datetime="2016-07-14 20:43"><abbr class="day" title="sobota">So</abbr> 14.7. 20:43</time>
+			<span class="title condensed">Setkání fanoušků u piva</span>
+		</li>
+		<li class="icon icon-match">
+			<time class="datetime" datetime="2016-07-14 20:43"><abbr class="day" title="sobota">So</abbr> 14.7. 20:43</time>
+			<span class="title condensed">Bohemians <span class="badge u19">U19</span> - FK Dukla</span>
+		</li>
+	</ul>
+</div>
+<div class="reference">
+	<a href="#" class="icon-after icon-next">více</a>
+</div>

@@ -1,0 +1,45 @@
+@import "utilities/variables";
+
+.rating {
+	overflow: hidden;
+
+	.values {
+		float: left;
+		margin: 0;
+		padding: 0;
+	}
+
+	.icon {
+		display: block;
+	  float: right;
+		margin-right: -2px;
+		transform: skewX(-10deg) scaleX(0.9);
+
+		&:before {
+			@extend %icon-kangaroo-grey;
+			position: absolute;
+			margin-right: 0;
+		}
+
+		&.voted:before, &.voted ~ .icon:before {
+			@extend %icon-kangaroo-green;
+		}
+
+		a {
+			display: block;
+			overflow: hidden;
+			text-indent: -999em;
+			width: $space-xl;
+			height: $space-xl;
+			position: relative;
+		}
+	}
+
+	&.active {
+		.icon {
+			&:hover:before, &:hover ~ .icon:before, &.voted ~ .icon:hover:before {
+				@extend %icon-kangaroo-orange;
+			}
+		}
+	}
+}

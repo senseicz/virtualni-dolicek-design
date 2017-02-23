@@ -1,0 +1,41 @@
+<div class="row w-article-shorts">
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<article class="article">
+					<!--#include file="_article-abbreviated.html" -->
+					<h4 class="subheader">Články</h4>
+					<ul class="list-unstyled list-spacious list-links">
+						<li>
+							<a href="/article/17996/hasek-taktika-nam-vysla.aspx" title="Hašek: Taktika nám vyšla">Hašek: Taktika nám vyšla</a>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<article class="article">
+					<!--#include file="_article-abbreviated.html" -->
+				</article>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<article class="article">
+					<!--#include file="_article-abbreviated.html" -->
+					<h4 class="subheader">Zápasy</h4>
+					<ul class="list-unstyled list-spacious list-links">
+						<li>
+							<a href="/zapas/4690/fc-viktoria-plzen-bohemians-praha-1905.aspx" title="FC Viktoria Plzeň - Bohemians Praha 1905 1:1 (1:1)">FC Viktoria Plzeň - Bohemians Praha 1905 1:1 (1:1)</a>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</div>
+	</div>
+</div>

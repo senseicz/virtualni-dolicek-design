@@ -1,0 +1,13 @@
+@import "utilities/variables";
+
+// Page layout // --------------------------------------------------
+
+.w-page {
+  min-height: 100%;
+  position: relative;
+	background: $whitesmoke;
+}
+
+#es-strip-container {
+	z-index: 999 !important;
+}

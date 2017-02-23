@@ -1,0 +1,55 @@
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_table-score.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_official-partner.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_banner-square.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_calendar.shtml" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_fanshop.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_social-networks.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_text.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_links.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_tag-cloud.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_line-up.html" -->
+	</div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-body">
+		<!--#include file="_survey.html" -->
+	</div>
+</div>

@@ -1,0 +1,35 @@
+@import "utilities/variables";
+@import "elements/icons";
+
+.login-external {
+	padding: $grid-gutter-width;
+	text-align: center;
+
+	.btn {
+		text-transform: uppercase;
+		clear: left;
+		min-width: 275px;
+		margin-bottom: $space-sm;
+	}
+
+	.icon:before {
+		float: left;
+		width: 32px;
+		height: 32px;
+		position: relative;
+		margin-top: -6px;
+		margin-bottom: -6px;
+	}
+
+	.icon-facebook:before {
+		@extend %icon-facebook-box-blue;
+	}
+
+	.icon-google:before {
+		@extend %icon-google-plus-box-red;
+	}
+
+	.icon-twitter:before {
+		@extend %icon-twitter-box-blue;
+	}
+}

@@ -1,0 +1,34 @@
+@import "utilities/variables";
+@import "modules/article";
+
+.w-article-shorts {
+	.panel {
+		height: 140px;
+		overflow: auto;
+	}
+
+	.author, .image, .icon {
+		display: none;
+	}
+
+	.title {
+		@include text-lg;
+	}
+
+	.subheader {
+		 margin-bottom: $space-xs;
+	}
+
+	.time {
+		float: left;
+		margin-right: $space-sm;
+	}
+
+	.subheader {
+		@include text-md;
+	}
+
+	.list-links {
+		@include text-sm;
+	}
+}

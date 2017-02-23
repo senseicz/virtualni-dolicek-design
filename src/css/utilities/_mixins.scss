@@ -1,0 +1,95 @@
+@import "utilities/functions";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+
+// Rounded corners // ----------------------------------------------------------
+@mixin rounded($radius: 50%) {
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+// Border radius // ------------------------------------------------------------
+@mixin border-radius($topright: 0, $bottomright: 0, $bottomleft: 0, $topleft: 0) {
+  border-top-right-radius: $topright;
+  border-bottom-right-radius: $bottomright;
+  border-bottom-left-radius: $bottomleft;
+  border-top-left-radius: $topleft;
+  background-clip: padding-box;
+}
+// Font face // ----------------------------------------------------------------
+// Based on: https://gist.github.com/jonathantneal/d0460e5c2d5d7f9bc5e6
+@mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
+	$src: null;
+
+	$extmods: (
+		eot: "?",
+		svg: "#" + str-replace($name, " ", "_")
+	);
+
+	$formats: (
+		otf: "opentype",
+		ttf: "truetype"
+	);
+
+	@each $ext in $exts {
+		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+	}
+
+	@font-face {
+		font-family: quote($name);
+		font-style: $style;
+		font-weight: $weight;
+		src: $src;
+	}
+}
+
+// Simplify breakpoint definition // -------------------------------------------------
+// Based on: https://gist.github.com/timknight/03e6335b8816aa534cf7
+@mixin media($min: 0, $max: 0) {
+	$query: "all" !default;
+	@if      $min != 0 and $max != 0 { $query: "(min-width: #{$min}) and (max-width: #{$max})"; } // set both min and max
+  @else if $min != 0 and $max == 0 { $query: "(min-width: #{$min})"; } // set just min
+  @else if $min == 0 and $max != 0 { $query: "(max-width: #{$max})"; } // set just max
+	@media #{$query} { @content; }
+}
+
+// Only display content to screen readers // -----------------------------------
+// Based on: http://a11yproject.com/posts/how-to-hide-content/
+@mixin sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+// Centering element of unknown width and height // ----------------------------
+@mixin center {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin horizontal-center {
+	position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@mixin vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+// Overlay an element with another layer // ------------------------------------
+@mixin overlay {
+	position: absolute;
+  top: 0;
+  right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}

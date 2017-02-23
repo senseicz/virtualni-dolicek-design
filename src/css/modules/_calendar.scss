@@ -1,0 +1,40 @@
+@import "utilities/variables";
+@import "elements/badges";
+@import "modules/event";
+
+.calendar {
+	font-family: 'Roboto Condensed';
+
+	.datetime .date {
+		display: none;
+	}
+
+	.events-list {
+		li {
+			padding-left: 30px;
+			position: relative;
+
+			&:before {
+				position: absolute;
+				left: 0;
+			}
+		}
+
+		.badge {
+			position: relative;
+			top: -1px;
+		}
+
+		.icon-match:before {
+			@extend %icon-soccer-grey;
+		}
+
+		.icon-birthday:before {
+			@extend %icon-gift-grey;
+		}
+
+		.icon-meetup:before {
+			@extend %icon-account-multiple-outline-grey;
+		}
+	}
+}

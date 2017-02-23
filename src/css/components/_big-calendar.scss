@@ -1,0 +1,40 @@
+@import "utilities/variables";
+@import "elements/references";
+
+.big-calendar {
+  .heading {
+    @include text-xl;
+  }
+
+  .list-unstyled {
+    li {
+      margin-bottom: $space-xs;
+    }
+  }
+
+  .scroll {
+    max-height: $grid-unit * 39;
+    overflow-y: auto;
+  }
+
+  .birthday {
+    color: $green;
+  }
+
+  .match {
+    color: $bohemians-green;
+  }
+
+  .reference {
+    overflow: hidden;
+    margin-bottom: $space-sm;
+
+    .icon-prev {
+      float: left;
+    }
+
+    .icon-next {
+      float: right;
+    }
+  }
+}

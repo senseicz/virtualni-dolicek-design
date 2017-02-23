@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Virtuální Ďolíček - www stránky Bohemians Praha 1905</title>
+	<!--#include file="_favicon.html" -->
+</head>
+<body>
+	<div class="w-page">
+		<!--#include file="_page-header.html" -->
+		<div class="w-page-content" id="Content">
+			<div class="container">
+				<div class="row">
+					<main class="col-sm-7 col-md-8">
+						<div class="w-article-hero" style="background-image:url('img/article-mock.jpg');">
+							<!--#include file="_article-link.shtml" -->
+						</div>
+						<!--#include file="_match-list.shtml" -->
+						<!--#include file="_banner-top.html" -->
+						<!--#include file="_article-shorts.shtml" -->
+						<!--#include file="_article-list.shtml" -->
+						<!--#include file="_banner-article.html" -->
+						<!--#include file="_article-list.shtml" -->
+						<div class="reference">
+							<a href="#" class="icon-after icon-next">další články</a>
+						</div>
+					</main>
+					<aside class="col-sm-5 col-md-4">
+						<!--#include file="_aside.shtml" -->
+					</aside>
+				</div>
+			</div>
+		</div>
+		<!--#include file="_page-footer.html" -->
+	</div>
+	<div class="modal fade" tabindex="-1" role="dialog" id="Interstitial">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<iframe src="http://localhost:3000/modal.html"></iframe>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			</div>
+		</div>
+	</div>
+	<!--#include file="_js.html" -->
+</body>
+</html>

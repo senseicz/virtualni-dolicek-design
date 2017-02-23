@@ -1,0 +1,21 @@
+@import "utilities/variables";
+
+.skip-links {
+	@include center;
+	text-align: center;
+
+	.link {
+		@include sr-only;
+		color: $link-color;
+
+		&:focus {
+			width: auto;
+			height: auto;
+			margin: 0;
+			clip: auto;
+			background: $white;
+			padding: $space-sm $space-lg;
+			min-width: 200px;
+		}
+	}
+}

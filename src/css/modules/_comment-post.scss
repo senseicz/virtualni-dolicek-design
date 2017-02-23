@@ -1,0 +1,75 @@
+@import "utilities/variables";
+@import "modules/article";
+@import "elements/icons";
+
+.comment-post {
+	overflow: hidden;
+
+  &.vip {
+    .content {
+      color: $bohemians-green;
+    }
+  }
+
+  .header, .content   {
+    overflow: hidden;
+    margin-bottom: $space-md;
+  }
+
+  .author {
+    @include text-lg;
+    font-weight: 700;
+    float: left;
+  }
+
+  .time {
+    float: right;
+  }
+
+  .actions {
+    float: left;
+  }
+
+  .stats {
+    float: right;
+    margin: 0;
+    padding: $space-sm;
+  }
+
+  .origin {
+    @include text-bs;
+    color: $grey;
+  }
+
+  .originator {
+    margin-bottom: $space-xs;
+  }
+
+	.icon-thumbs-up:before {
+    @extend %icon-thumb-up-outline-grey;
+  }
+
+  .icon-thumbs-down:before {
+    @extend %icon-thumb-down-outline-grey;
+  }
+
+  .icon-reply:before {
+    @extend %icon-reply-grey;
+  }
+
+  + .comment-post {
+    border-top: 1px solid $gainsboro;
+    padding-top: $space-sm;
+  }
+
+	.clickable {
+    display: block;
+    width: $space-xl;
+    text-align: center;
+    font-weight: 700;
+
+    &:hover {
+      background: $whitesmoke;
+    }
+	}
+}

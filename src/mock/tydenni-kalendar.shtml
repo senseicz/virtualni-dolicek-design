@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Virtuální Ďolíček - www stránky Bohemians Praha 1905</title>
+	<!--#include file="_favicon.html" -->
+</head>
+<body>
+	<div class="w-page">
+		<!--#include file="_page-header.html" -->
+		<div class="w-page-content" id="Content">
+			<div class="container">
+				<div class="row">
+					<main class="col-sm-7 col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="big-calendar">
+									<h2 class="panel-header">týden 40 (3. října - 9. října)</h2>
+									<div class="reference">
+										<a href="/kalendar/tydenni-kalendar/tyden-39" class="icon icon-prev">předcházející týden</a>
+										<a href="/kalendar/tydenni-kalendar/tyden-41" class="icon-after icon-next">následující týden</a>
+									</div>
+									<form action="/Kalendar/tydenni-kalendar" id="weeklyCalendarForm" method="post" class="filters">
+										<input type="hidden" name="selectedDate" id="selectedDate">
+										<div class="form-group">
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="1" /> Bohemians Praha 1905 A
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="28" /> Juniorka
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="3" /> U19
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="5" /> U17
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="6" /> U16
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="13" /> U15
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="15" /> U14
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="14" /> U13
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="16" /> U12
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="19" /> U11
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="20" /> U10
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="21" /> U9
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="22" /> U8
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="23" /> U7
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="26" /> U6
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="27" /> U5
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="29" /> Ženy
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="30" /> Farma - SK Horní Měcholupy
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="selectedTeams" checked="checked" value="31" /> Plážová kopaná
+											</label>
+										</div>
+										<div class="form-group">
+											<label class="checkbox-inline">
+												<input type="checkbox" name="matchesWhere" checked="checked" value="home" /> domácí zápasy
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="matchesWhere" checked="checked" value="away" /> venkovní zápasy
+											</label>
+											<label class="checkbox-inline">
+												<input type="checkbox" name="matchesWhere" checked="checked" value="birthdays" /> narozeniny
+											</label>
+										</div>
+										<div class="form-actions">
+											<button type="submit" class="btn btn-primary" id="filtrujTymyBtn">Aplikovat filtr</button>
+											<button type="button" class="btn btn-default" id="btnSelectAll">Vybrat vše</button>
+											<button type="button" class="btn btn-default" id="btnUnselectAll">Nevybrat nic</button>
+											<button type="button" class="btn btn-default" id="btnDownloadiCal">Stáhnout ve formátu iCal</button>
+										</div>
+									</form>
+
+									<div class="calendar">
+										<h3 class="heading">pondělí 3. října 2016</h3>
+										<ul class="events-list list-unstyled">
+											<li class="icon icon-birthday">
+												<span class="title condensed"> Narozeniny Tomáš Hradecký, 24 let</span>
+											</li>
+											<li class="icon icon-birthday">
+												<span class="title condensed"> Narozeniny Petr Vacík, 19 let</span>
+											</li>
+											<li class="icon icon-birthday">
+												<span class="title condensed"> Narozeniny Petr Rothe, 21 let</span>
+											</li>
+											<li class="icon icon-match">
+												<div class="event" itemscope="" itemtype="http://schema.org/SportsEvent">
+													<time datetime="15.10.2016 15:00" itemprop="startDate" class="datetime"><span class="date">15.10.2016,</span><span class="time">15:00</span></time>
+													<h4 class="title" itemprop="name">Mistrovská utkání - I. liga</h4>
+													<div class="teams">
+														<div class="team" itemprop="competitor" itemscope="" itemtype="http://schema.org/SportsTeam">
+															<span class="team-name" itemprop="name">Bohemians Praha 1905</span>
+														</div>
+														<span class="score">vs</span>
+														<div class="team" itemprop="competitor" itemscope="" itemtype="http://schema.org/SportsTeam">
+															<span class="team-name" itemprop="name">FK Mladá Boleslav</span>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<h3 class="heading">úterý 4. října 2016</h3>
+										<p>Dnes nejsou v plánu žádné události.</p>
+									</div>
+									<div class="reference">
+										<a href="/kalendar/tydenni-kalendar/tyden-39" class="icon icon-prev">předcházející týden</a>
+										<a href="/kalendar/tydenni-kalendar/tyden-41" class="icon-after icon-next">následující týden</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+					<aside class="col-sm-5 col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<!--#include file="_social-networks.html" -->
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<!--#include file="_page-footer.html" -->
+	</div>
+	<!--#include file="_js.html" -->
+</body>
+</html>

@@ -1,0 +1,74 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/badges";
+
+.u15, .u14, .u13, .u12, .u11, .u10, .u9, .u8, .u7, .u6, .u5 {
+  color: $black;
+}
+
+.a-tym {
+  background-color: rgba($bohemians-green, 1);
+}
+
+.u21 {
+  background-color: rgba($bohemians-green, 0.9);
+}
+
+.u19 {
+  background-color: rgba($bohemians-green, 0.8);
+}
+
+.u17 {
+  background-color: rgba($bohemians-green, 0.7);
+}
+
+.u16 {
+  background-color: rgba($bohemians-green, 0.6);
+}
+
+.u15 {
+  background-color: rgba($bohemians-green, 0.4);
+}
+
+.u14 {
+  background-color: rgba($bohemians-green, 0.3);
+}
+
+.u13 {
+  background-color: rgba($bohemians-green, 0.2);
+}
+
+.u12 {
+  background-color: rgba($bohemians-green, 0.1);
+}
+
+.u11 {
+  background-color: rgba($yellow, 1);
+}
+
+.u10 {
+  background-color: rgba($yellow, 0.9);
+}
+
+.u9 {
+  background-color: rgba($yellow, 0.8);
+}
+
+.u8 {
+  background-color: rgba($yellow, 0.7);
+}
+
+.u7 {
+  background-color: rgba($yellow, 0.6);
+}
+
+.u6 {
+  background-color: rgba($yellow, 0.5);
+}
+
+.u5 {
+  background-color: rgba($yellow, 0.4);
+}
+
+.list-links .badge {
+	min-width: 30px;
+}

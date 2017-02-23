@@ -1,0 +1,37 @@
+@import "utilities/variables";
+@import "modules/filters";
+
+.filters {
+	background: $whitesmoke;
+	border: 1px solid $gainsboro;
+	padding: $space-md $space-lg $space-xs;
+
+	.form-group, .form-actions {
+		overflow: hidden;
+	}
+
+	.checkbox-inline {
+		margin-left: 0;
+		@include ellipsis;
+		@include text-sm;
+		display: block;
+	}
+
+	@include media($screen-sm-min) {
+		.form-group {
+			column-count: 2;
+		}
+	}
+
+	@include media($screen-md-min) {
+		.form-group {
+			column-count: 3;
+		}
+	}
+
+	@include media($screen-lg-min) {
+		.form-group {
+			column-count: 4;
+		}
+	}
+}

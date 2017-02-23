@@ -1,0 +1,24 @@
+@import "utilities/variables";
+@import "elements/icons";
+
+.search {
+	position: relative;
+
+	.form-group {
+		margin-bottom: 0;
+	}
+
+	.icon-magnify:before {
+		@extend %icon-magnify-black;
+	}
+
+	.btn-image {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	@include media(0, $screen-md-max) {
+		clear: both;
+	}
+}

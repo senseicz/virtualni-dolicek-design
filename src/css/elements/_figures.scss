@@ -1,0 +1,41 @@
+@import "utilities/variables";
+
+.fig {
+	background: $whitesmoke;
+	margin-bottom: $grid-gutter-width;
+	padding: $space-xs;
+	border: 1px solid $gainsboro;
+	display: block;
+
+	img {
+		display: block;
+		width: 100%;
+	}
+
+	&.left, &.right {
+		max-width: 50%;
+	}
+
+	&.left {
+		float: left;
+		margin-right: $grid-gutter-width;
+	}
+
+	&.right {
+		float: right;
+		margin-left: $grid-gutter-width;
+	}
+
+	.caption {
+		padding-top: $space-xs;
+	}
+
+	@include media(0, $screen-xs-max) {
+		&.left, &.right {
+			max-width: 100%;
+			float: none;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}

@@ -1,0 +1,97 @@
+@import "utilities/variables";
+@import "modules/article";
+
+$image-width: 150px;
+$image-height: 100px;
+
+.w-article-list {
+	.panel-body {
+		position: relative;
+		overflow: hidden;
+
+			&:after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 250px;
+				height: 250px;
+				right: -50px;
+				bottom: -110px;
+				z-index: 0;
+				@extend %icon-soccer-whitesmoke;
+				background-size: cover;
+			}
+	}
+
+	.article {
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+
+		&.media {
+			padding-left: $image-width + $space-lg;
+			min-height: $image-height;
+		}
+	}
+
+	.title {
+		@include text-xl;
+	}
+
+	.content {
+		padding-top: $space-xs;
+
+		.icon-more:after {
+			@extend %icon-chevron-right-grey;
+			margin-left: 0;
+			position: relative;
+			top: -1px;
+		}
+	}
+
+	.image {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: $image-width;
+		height: $image-height;
+
+		img {
+			@include vertical-center;
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	.icon {
+		margin-left: $space-sm;
+
+		+ .icon {
+			margin-left: 0;
+		}
+	}
+
+	@include media($screen-sm-min, $screen-sm-max) {
+		.article.media {
+			padding-left: ($image-width / 1.5) + $space-md;
+			min-height: $image-height / 1.5;
+		}
+
+		.image {
+			width: $image-width / 1.5;
+			height: $image-height / 1.5;
+		}
+	}
+
+	@include media(0, $screen-xs-max) {
+		.article.media {
+			padding-left: ($image-width / 2) + $space-sm;
+			min-height: $image-height / 2;
+		}
+
+		.image {
+			width: $image-width / 2;
+			height: $image-height / 2;
+		}
+	}
+}

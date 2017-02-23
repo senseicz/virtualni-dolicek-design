@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Virtuální Ďolíček - www stránky Bohemians Praha 1905</title>
+	<!--#include file="_favicon.html" -->
+</head>
+<body>
+	<div class="w-page">
+		<!--#include file="_page-header.html" -->
+		<div class="w-page-content" id="Content">
+			<div class="container">
+				<main>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<div class="big-calendar">
+								<h2 class="panel-header">Kalendář Bohemáka - říjen 2016</h2>
+								<div class="reference">
+									<a href="/kalendar/kalendar/zari-2016" class="icon icon-prev">září 2016</a>
+									<a href="/kalendar/kalendar/listopad-2016" class="icon-after icon-next">listopad 2016</a>
+								</div>
+								<div class="table-responsive" data-toggle-class>
+									<table class="table week">
+									<thead>
+										<tr>
+											<th scope="col">pondělí</th>
+											<th scope="col">úterý</th>
+											<th scope="col">středa</th>
+											<th scope="col">čtvrtek</th>
+											<th scope="col">pátek</th>
+											<th scope="col">sobota</th>
+											<th scope="col">neděle</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>
+												<h4>26</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Patrik Macháč, 17 let</li>
+													<li class="birthday">Narozeniny Jan Přibyl, 14 let</li>
+													<li class="birthday">Narozeniny Josef Očenáš, 11 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>27</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Miroslav Terebeši, 11 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>28</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U17: AC Sparta Praha - Bohemians Praha 1905 (U17)</li>
+													<li class="match">U15: FK Mladá Boleslav - Bohemians Praha 1905 (U15)</li>
+													<li class="match">U14: FK Mladá Boleslav - Bohemians Praha 1905 (U14)</li>
+													<li class="match">U16: AC Sparta Praha - Bohemians Praha 1905 (U16)</li>
+													<li class="match">DFK Bohemians 1905 - Rakovník (Ženy)</li>
+													<li class="birthday">Narozeniny Daniel Nešpor, 29 let</li>
+													<li class="birthday">Narozeniny František Rusňák, 23 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>29</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Martin Stehlík, 12 let</li>
+													<li class="birthday">Narozeniny Martin Chalupa, 36 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>30</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">FC Vysočina Jihlava - Bohemians Praha 1905 (Bohemians Praha 1905 A)</li>
+													<li class="birthday">Narozeniny Jan Špůrek, 23 let</li>
+													<li class="birthday">Narozeniny Jiří Jeslínek, 29 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>1</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U19: FK Baník Most - Bohemians Praha 1905 (U19)</li>
+													<li class="match">U15: Bohemians Praha 1905 - AC Sparta Praha (U15)</li>
+													<li class="match">U14: Bohemians Praha 1905 - AC Sparta Praha (U14)</li>
+													<li class="birthday">Narozeniny Martin Kotyza, 32 let</li>
+													<li class="birthday">Narozeniny Tomáš Buďárek, 9 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>2</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">Bohemians Praha 1905 - FC Vysočina Jihlava (Juniorka)</li>
+													<li class="birthday">Narozeniny Jakub Hlavica, 19 let</li>
+													<li class="birthday">Narozeniny Luděk Knop, 11 let</li>
+													<li class="birthday">Narozeniny Regina Pourová, 40 let</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h4>3</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Tomáš Přibyl, 20 let</li>
+													<li class="birthday">Narozeniny Martin Hašek, 21 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>4</h4>
+											</td>
+											<td>
+												<h4>5</h4>
+											</td>
+											<td>
+												<h4>6</h4>
+											</td>
+											<td>
+												<h4>7</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Kristýna Hůrská, 18 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>8</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U17: Bohemians Praha 1905 - FK Teplice (U17)</li>
+													<li class="match">U15: FC Hradec Králové - Bohemians Praha 1905 (U15)</li>
+													<li class="match">U13: FC Tempo Praha - Bohemians Praha 1905 (U13)</li>
+													<li class="match">U12: FC Tempo Praha - Bohemians Praha 1905 (U12)</li>
+													<li class="match">U16: Bohemians Praha 1905 - FK Teplice (U16)</li>
+													<li class="match">U14: FC Hradec Králové - Bohemians Praha 1905 (U14)</li>
+												</ul>
+											</td>
+											<td>
+												<h4>9</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U19: Bohemians Praha 1905 - FK Jablonec (U19)</li>
+													<li class="birthday">Narozeniny Feďa Begovič, 18 let</li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<h4>10</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Petr Ježdík, 21 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>11</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Denis Vala, 16 let</li>
+													<li class="birthday">Narozeniny Michal Nosek, 33 let</li>
+													<li class="birthday">Narozeniny Patrik Vala, 16 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>12</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Jan Pejša, 15 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>13</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Jan Schöbl, 13 let</li>
+													<li class="birthday">Narozeniny Petr Vacík, 19 let</li>
+													<li class="birthday">Narozeniny Tomáš Hradecký, 24 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>14</h4>
+												<ul class="list-unstyled scroll">
+													<li class="birthday">Narozeniny Petr Rothe, 21 let</li>
+													<li class="birthday">Narozeniny Roman Seniv, 15 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>15</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U15: Bohemians Praha 1905 - FC Viktoria Plzeň (U15)</li>
+													<li class="match">U14: Bohemians Praha 1905 - FC Viktoria Plzeň (U14)</li>
+													<li class="match">Bohemians Praha 1905 - FK Mladá Boleslav (Bohemians Praha 1905 A)</li>
+													<li class="birthday">Narozeniny Petr Eiselt, 13 let</li>
+												</ul>
+											</td>
+											<td>
+												<h4>16</h4>
+												<ul class="list-unstyled scroll">
+													<li class="match">U12: Bohemians Praha 1905 - AC Sparta Praha (U12)</li>
+													<li class="match">U13: Bohemians Praha 1905 - AC Sparta Praha (U13)</li>
+													<li class="match">U19: Bohemians Praha 1905 - FC Písek (U19)</li>
+													<li class="match">FK Mladá Boleslav - Bohemians Praha 1905 (Juniorka)</li>
+													<li class="match">U17: SK Slavia Praha - Bohemians Praha 1905 (U17)</li>
+													<li class="match">U16: SK Slavia Praha - Bohemians Praha 1905 (U16)</li>
+													<li class="birthday">Narozeniny Zikmund Bárta, 13 let</li>
+												</ul>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+		<!--#include file="_page-footer.html" -->
+	</div>
+	<!--#include file="_js.html" -->
+</body>
+</html>

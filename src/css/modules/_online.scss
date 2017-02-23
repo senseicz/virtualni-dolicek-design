@@ -1,0 +1,96 @@
+@import "utilities/variables";
+
+.online {
+	.coverage {
+		dt {
+			width: 46px;
+			position: relative;
+		}
+
+		dd {
+			padding-left: 50px;
+			border-bottom: 1px solid $whitesmoke;
+			padding-bottom: $space-xs;
+			margin-bottom: $space-xs;
+		}
+	}
+
+	.icon-after:after {
+		vertical-align: top;
+		float: right;
+		margin-right: $space-xs;
+		margin-left: 0;
+	}
+
+	.icon-card-red:after, .icon-card-yellow:after {
+		width: $space-md;
+		height: $space-lg;
+		margin-right: $space-sm;
+		margin-top: 2px;
+	}
+
+	.icon-card-red:after {
+		background-color: $red;
+	}
+
+	.icon-card-yellow:after {
+		background-color: $yellow;
+	}
+
+	.icon-card-both:before, .icon-card-both:after {
+		content: '';
+		display: inline-block;
+		width: 9px;
+		height: $space-md;
+	}
+
+	.icon-card-both:before {
+		background-color: $yellow;
+		position: absolute;
+		right: 12px;
+		top: 4px;
+	}
+
+	.icon-card-both:after {
+		background-color: $red;
+		margin-right: $space-sm;
+		position: relative;
+	}
+
+	.icon-ball:after {
+		@extend %icon-soccer-grey;
+	}
+
+	.icon-change:after {
+		@extend %icon-swap-horizontal-grey;
+	}
+
+	.icon-whistle:after {
+		@extend %icon-whistle-grey;
+	}
+
+	.icon-audience:after {
+		@extend %icon-account-multiple-outline-grey;
+	}
+
+	.icon-alert:after {
+		@extend %icon-alert-circle-outline-grey;
+	}
+
+	.icon-injury:after {
+		@extend %icon-plus-circle-outline-grey;
+	}
+}
+
+@keyframes flash {
+	from {
+		background-color: $yellow;
+	}
+	to {
+		background-color: none;
+	}
+}
+
+.online-highlight {
+	animation: flash 5s ease-out;
+}

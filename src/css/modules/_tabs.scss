@@ -1,0 +1,16 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/navs";
+
+.tab-pane {
+	padding: $space-xl 0;
+}
+
+@include media(0, $screen-xs-max) {
+	.nav-tabs {
+		display: none;
+	}
+
+	.tab-content > .tab-pane {
+		display: block;
+	}
+}

@@ -1,0 +1,48 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+
+@mixin typeface($name) {
+	font-size: map-get($font-sizes, $name);
+	line-height: map-get($line-heights, $name);
+}
+
+// Text size mixins // ---------------------------------------------------------
+@mixin text-xxxl {
+	@include typeface(xxxl);
+}
+@mixin text-xxl {
+	@include typeface(xxl);
+}
+@mixin text-xl {
+	@include typeface(xl);
+}
+@mixin text-lg {
+	@include typeface(lg);
+}
+@mixin text-md {
+	@include typeface(md);
+}
+@mixin text-bs {
+	@include typeface(bs);
+}
+@mixin text-sm {
+	@include typeface(sm);
+}
+@mixin text-xs {
+	@include typeface(xs);
+}
+
+// Cross-browsers word wrap // -------------------------------------------------
+// Based on: https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/
+@mixin word-wrap {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+// Pure CSS ellipsis // --------------------------------------------------------
+@mixin ellipsis {
+	overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

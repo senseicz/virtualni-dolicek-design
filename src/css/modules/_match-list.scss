@@ -1,0 +1,22 @@
+@import "utilities/variables";
+@import "utilities/images";
+
+.match-list {
+	.panel-body {
+		min-height: 154px;
+		position: relative;
+	}
+	.event {
+		&:empty:before {
+			content: '';
+			display: inline-block;
+			width: 120px;
+			height: 120px;
+			@extend %logo-gainsboro;
+			background-repeat: no-repeat;
+			background-position: 50% 50%;
+			background-size: contain;
+			@include center;
+		}
+	}
+}

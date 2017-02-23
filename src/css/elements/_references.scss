@@ -1,0 +1,18 @@
+@import "utilities/variables";
+@import "utilities/images";
+
+.more, .reference {
+	display: block;
+	text-align: center;
+	padding-top: $space-sm;
+
+	.icon-more:after, .icon-next:after {
+		@extend %icon-chevron-right-grey;
+		margin-left: 0;
+	}
+
+	.icon-prev:before {
+		@extend %icon-chevron-left-grey;
+		margin-right: 0;
+	}
+}

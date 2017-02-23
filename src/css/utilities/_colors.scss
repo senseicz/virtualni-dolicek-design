@@ -1,0 +1,62 @@
+  // Brand colors // --------------------------------------------------
+$bohemians-green: #008a52 !default;
+$bohemians-green-active: mix($bohemians-green, black, 75);
+
+// Primary colors // --------------------------------------------------
+$green: #5aa628 !default;
+$red: #f00000 !default;
+$orange: #f90 !default;
+$yellow: #fd0 !default;
+$blue: #00aff0 !default;
+
+// Neutral colors // --------------------------------------------------
+$black: #000 !default;
+$onyx: #212121 !default;
+$dimgray: #666 !default;
+$grey: #999 !default;
+$silver: #ccc !default;
+$gainsboro: #e0e0e0 !default;
+$whitesmoke: #f7f7f7 !default;
+$white: #fff !default;
+
+// Special colors // --------------------------------------------------
+$facebook-blue: #3b5998 !default;
+$twitter-blue: #55acee !default;
+$google-plus-red: #dd4b39 !default;
+$youtube-play-red: #cd201f !default;
+$instagram-grey: #212121 !default;
+
+// Colors usage // -------------------------------------------------------------
+$brand-primary: $green;
+$brand-success: $green;
+$brand-info: $blue;
+$brand-warning: $orange;
+$brand-danger: $red;
+
+$text-color: $black;
+$text-muted: $grey;
+$link-color: $onyx;
+$link-hover-color: $black;
+
+$input-bg: $white;
+$input-bg-disabled: $gainsboro;
+$input-color: $grey;
+$input-border: $silver;
+$input-border-focus: $green;
+$input-color-placeholder: $silver;
+
+$state-success-text: $white;
+$state-success-bg: $brand-success;
+$state-success-border: $brand-success;
+
+$state-info-text: $white;
+$state-info-bg: $brand-info;
+$state-info-border: $brand-info;
+
+$state-warning-text: $white;
+$state-warning-bg: $brand-warning;
+$state-warning-border: $brand-warning;
+
+$state-danger-text: $white;
+$state-danger-bg: $brand-danger;
+$state-danger-border: $brand-danger;

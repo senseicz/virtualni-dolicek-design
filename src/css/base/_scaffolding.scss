@@ -1,0 +1,16 @@
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+
+// HTML reset // --------------------------------------------------
+html, body {
+  height: 100%;
+}
+body {
+  position: relative;
+
+	&.strip {
+		padding-top: $grid-unit * 10;
+	}
+}

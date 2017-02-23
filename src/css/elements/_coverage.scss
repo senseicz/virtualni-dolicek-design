@@ -1,0 +1,15 @@
+@import "utilities/variables";
+
+.coverage {
+	dt {
+		float: left;
+		clear: left;
+		font-weight: 400;
+		color: $red;
+		margin-right: $space-xs;
+	}
+
+	dd {
+		color: $bohemians-green;
+	}
+}

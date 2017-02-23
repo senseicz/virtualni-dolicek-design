@@ -1,0 +1,31 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
+
+// Based on: https://gist.github.com/ashrafuzzaman/8896395#file-gistfile1-scss
+
+// Typeahead // --------------------------------------------------
+.twitter-typeahead {
+	width: 100%;
+
+	.tt-query, .tt-hint {
+	  margin-bottom: 0;
+	}
+
+	.tt-dropdown-menu {
+	  @extend .dropdown-menu;
+	}
+
+	.tt-suggestion {
+	  display: block;
+	  padding: $space-xs $space-xl;
+
+		p {
+		  margin: 0;
+		}
+
+		&.tt-is-under-cursor, &.tt-cursor {
+		  color: $dropdown-link-active-color;
+		  background-color: $dropdown-link-active-bg;
+		}
+	}
+}

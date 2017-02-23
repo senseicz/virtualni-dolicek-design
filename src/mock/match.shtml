@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/main.css" />
+	<title>Virtuální Ďolíček - www stránky Bohemians Praha 1905</title>
+	<!--#include file="_favicon.html" -->
+</head>
+<body>
+	<div class="w-page">
+		<!--#include file="_page-header.html" -->
+		<div class="w-page-content" id="Content">
+			<div class="container">
+				<div class="match-summary">
+					<span class="hashtag">#bohbrn</span>
+					<div class="team" itemprop="competitor" itemscope itemtype="http://schema.org/SportsTeam">
+						<span class="team-logo">
+							<img src="img/team-bohemians-praha-1905.png" alt="Logo Bohemians Praha 1905" itemprop="image" />
+						</span>
+						<span class="team-name" itemprop="name">Bohemians Praha 1905</span>
+					</div>
+					<span class="score">2:0 (0:0)</span>
+					<div class="team" itemprop="competitor" itemscope itemtype="http://schema.org/SportsTeam">
+						<span class="team-name" itemprop="name">SK Dynamo České Budějovice</span>
+						<span class="team-logo">
+							<img src="img/team-sk-dynamo-ceske-budejovice.png" alt="Logo SK Dynamo České Budějovice" itemprop="image" />
+						</span>
+					</div>
+					<span class="time">84:50</span>
+				</div>
+				<div class="row">
+					<main class="col-sm-7 col-md-8">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<div class="match-stats">
+									<dl class="list-key-value">
+										<dt>Branky</dt>
+										<dd>74. Pázler, 79. Gajič (vlastní), 90. Malinský</dd>
+										<dt>Rozhodčí</dt>
+										<dd>Franěk - Kotík, Dobrovolný</dd>
+										<dt>Žlutá karta</dt>
+										<dd>Jindřišek, Krch - P. Černý, Chleboun, Malinský</dd>
+										<dt>Diváků</dt>
+										<dd>4832</dd>
+										<dt>Bohemians Praha 1905</dt>
+										<dd>Fryšták - Křapka, Krch, Gajič, Havel - Berger (69. Bartek), Čížek, Jindřišek (77. Hubínek), Jirásek, Luts (46. Jeslínek) - Mikuš</dd>
+										<dt>FC Hradec Králové</dt>
+										<dd>Ottmar - Holeš, Chleboun, Plašil, Mudra - Janoušek, Schwarz - Martan (90. M. Černý), Vlkanova (87. Trubač), Malinský - Černý P (70. Pázler)</dd>
+									</dl>
+								</div>
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active"><a href="#online" aria-controls="online" role="tab" data-toggle="tab">online</a></li>
+									<li role="presentation"><a href="#story" aria-controls="story" role="tab" data-toggle="tab">reportáž</a></li>
+									<li role="presentation"><a href="#media" aria-controls="media" role="tab" data-toggle="tab">média</a></li>
+									<li role="presentation"><a href="#articles" aria-controls="articles" role="tab" data-toggle="tab">články</a></li>
+								</ul>
+								<!-- Tab panes -->
+								<div class="tab-content">
+									<div role="tabpanel" class="tab-pane active" id="online">
+										<!--#include file="_online.html" -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="story">
+										<!--#include file="_story.html" -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="media">
+										<!--#include file="_photos.html" -->
+									</div>
+									<div role="tabpanel" class="tab-pane" id="articles">
+										<!--#include file="_article-list.shtml" -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+					<aside class="col-sm-5 col-md-4">
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<!--#include file="_social-networks.html" -->
+							</div>
+						</div>
+					</aside>
+				</div>
+			</div>
+		</div>
+		<!--#include file="_page-footer.html" -->
+	</div>
+	<!--#include file="_js.html" -->
+</body>
+</html>

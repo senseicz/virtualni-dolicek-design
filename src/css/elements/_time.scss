@@ -1,0 +1,19 @@
+@import "utilities/variables";
+
+.date {
+	&.old {
+		color: $silver;
+	}
+
+	&.today {
+		background-color: $yellow;
+	}
+
+	&:before {
+		content: attr(data-day);
+	}
+
+	.verbose {
+		display: none;
+	}
+}

@@ -1,0 +1,5 @@
+<a href="#" class="article-link">
+	<article class="article media">
+		<!--#include file="_article-abbreviated.html" -->
+	</article>
+</a>

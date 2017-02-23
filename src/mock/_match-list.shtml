@@ -1,0 +1,18 @@
+<div class="row match-list">
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h3 class="sr-only">Minulý zápas</h3>
+				<!--#include file="_live-event.html" -->
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				<h3 class="sr-only">Příští zápas</h3>
+				<!--#include file="_future-event.html" -->
+			</div>
+		</div>
+	</div>
+</div>

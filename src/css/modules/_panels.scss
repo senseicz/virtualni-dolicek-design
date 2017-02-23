@@ -1,0 +1,20 @@
+@import "utilities/variables";
+@import "bootstrap-sass/assets/stylesheets/bootstrap/panels";
+
+// Panel // --------------------------------------------------
+.panel {
+	margin-bottom: $space-md;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	border: 0;
+}
+
+.panel-header {
+	margin: 0 0 $space-lg;
+	font-family: 'Roboto Condensed';
+	font-weight: 700;
+	@include text-xxl;
+
+	aside & {
+		@include text-xl;
+	}
+}

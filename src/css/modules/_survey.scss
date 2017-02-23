@@ -1,0 +1,60 @@
+@import "utilities/variables";
+
+.survey {
+	.options {
+		display: table;
+		width: 100%;
+
+		li {
+			display: table-row;
+		}
+
+		.option, .votes {
+			display: table-cell;
+			padding: $space-xs $space-xs 0;
+			white-space: nowrap;
+		}
+
+		.option {
+			width: 25%;
+			text-align: right;
+			padding-left: 0;
+
+			.btn {
+				text-decoration: underline;
+				@include text-bs;
+				border: 0;
+				padding: 0;
+				text-align: right;
+
+				&:hover, &:focus {
+					text-decoration: none;
+				}
+			}
+		}
+
+		.votes {
+			padding-right: 50px;
+		}
+	}
+
+	a.option {
+		text-decoration: underline;
+
+		&:hover, &:focus {
+			text-decoration: none;
+		}
+	}
+
+	.votes {
+		color: $grey;
+		@include text-xs;
+	}
+
+	.bar {
+		display: inline-block;
+		height: 6px;
+		background: $green;
+		margin-right: $space-xs;
+	}
+}

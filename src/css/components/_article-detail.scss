@@ -1,0 +1,53 @@
+@import "utilities/variables";
+@import "modules/article";
+@import "modules/cards";
+@import "modules/tags";
+
+.article {
+	&.detail, &.aside {
+		.subheader {
+			@include text-xl;
+		}
+
+		.content {
+			@include text-md;
+		}
+
+		.img-circle {
+			display: inline-block;
+			width: 32px;
+			height: 32px;
+			overflow: hidden;
+			vertical-align: middle;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.icon:before {
+			position: relative;
+			top: -1px;
+		}
+
+		.icon-match:before {
+			@extend %icon-soccer-grey;
+		}
+
+		.icon-pdf:before {
+			@extend %icon-file-pdf-grey;
+		}
+
+		.icon-doc:before {
+			@extend %icon-file-word-grey;
+		}
+
+		.icon-xls:before {
+			@extend %icon-file-excel-grey;
+		}
+
+		.icon-ppt:before {
+			@extend %icon-file-powerpoint-grey;
+		}
+	}
+}
