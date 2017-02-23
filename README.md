@@ -6,8 +6,8 @@ This project does not require any specific OS or editor, it will work on Windows
 You will need Node.js (tested with v. 7.0.0) and npm (tested with version 3.10.8) only to run the project. 
 Once you clone the repo, simply run following 2 commands:
 
-`npm install`
-`npm start`
+`npm install
+ npm start`
 
 ### Webpack
 Once you run `npm start`, a local development server is started and index template page will open on url http://localhost:3000. If you make any changes in scss or html files, the change will be instantly picked up and you will see the change in your web browser.
