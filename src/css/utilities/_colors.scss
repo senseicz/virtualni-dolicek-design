@@ -1,9 +1,5 @@
-  // Brand colors // --------------------------------------------------
-$bohemians-green: #008a52 !default;
-$bohemians-green-active: mix($bohemians-green, black, 75);
-
 // Primary colors // --------------------------------------------------
-$green: #5aa628 !default;
+$green: #008a52 !default;
 $red: #f00000 !default;
 $orange: #f90 !default;
 $yellow: #fd0 !default;
@@ -16,10 +12,11 @@ $dimgray: #666 !default;
 $grey: #999 !default;
 $silver: #ccc !default;
 $gainsboro: #e0e0e0 !default;
-$whitesmoke: #f7f7f7 !default;
+$whitesmoke: #f4f4f4 !default;
 $white: #fff !default;
 
 // Special colors // --------------------------------------------------
+$green-active: mix($green, black, 75);
 $facebook-blue: #3b5998 !default;
 $twitter-blue: #55acee !default;
 $google-plus-red: #dd4b39 !default;
@@ -27,6 +24,9 @@ $youtube-play-red: #cd201f !default;
 $instagram-grey: #212121 !default;
 
 // Colors usage // -------------------------------------------------------------
+$background-color: $whitesmoke;
+$content-text-color: $black;
+
 $brand-primary: $green;
 $brand-success: $green;
 $brand-info: $blue;

@@ -4,7 +4,8 @@
 // Page Footer // --------------------------------------------------
 .w-page-footer {
 	width: 100%;
-	padding-bottom: $space-xl;
+	padding-bottom: $space-xl * 2;
+	margin-bottom: -$space-xl;
 	margin-top: $space-xl;
 	background: $gainsboro;
 	border-top: 1px solid $silver;

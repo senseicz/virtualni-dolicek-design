@@ -3,9 +3,8 @@
 .media {
 	.fig {
 		width: 215px;
-		height: 160px;
-		margin-left: $space-xs;
-		margin-bottom: $space-sm;
+		padding-top: 160px;
+		position: relative;
 
 		&:empty {
 			@extend %icon-account-circle-white;
@@ -30,7 +29,7 @@
 	&.media-sm {
 		.fig {
 			width: 128px;
-			height: 98px;
+			padding-top: 98px;
 		}
 	}
 
@@ -38,6 +37,8 @@
 		display: block;
 		width: 100%;
 		height: 100%;
-		position: relative;
+		position: absolute;
+		top: 0;
+		left: 0;
 	}
 }

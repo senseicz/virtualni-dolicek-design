@@ -20,7 +20,7 @@ $variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $whit
 
 // Usage: @extend %(name)-(variant)
 // e.g. @extend %icon-email-blue
-@include image-variants(logo, (green: $bohemians-green, grey: $grey, gainsboro: $gainsboro));
+@include image-variants(logo, (green: $green, grey: $grey, gainsboro: $gainsboro, whitesmoke: $whitesmoke));
 @include image-variants(icon-magnify, $variants);
 @include image-variants(icon-soccer, (whitesmoke: $whitesmoke, grey: $grey));
 @include image-variants(icon-gift, (grey: $grey));

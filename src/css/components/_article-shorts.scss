@@ -3,8 +3,25 @@
 
 .w-article-shorts {
 	.panel {
-		height: 140px;
+		height: 160px;
 		overflow: auto;
+
+		&::-webkit-scrollbar
+		{
+		  width: $space-sm;
+		}
+
+		&::-webkit-scrollbar-track
+		{
+		  background: $white;
+			margin: $space-xs;
+		}
+
+		&::-webkit-scrollbar-thumb
+		{
+		  background: $gainsboro;
+			@include rounded($space-xs);
+		}
 	}
 
 	.author, .image, .icon {
