@@ -37,12 +37,12 @@
 	}
 
 	.btn-primary {
-		background: $bohemians-green;
-		border-color: $bohemians-green;
+		background: $green;
+		border-color: $green;
 
 		&:hover, &:focus {
-			background: $bohemians-green-active;
-			border-color: $bohemians-green-active;
+			background: $green-active;
+			border-color: $green-active;
 		}
 
 		.price {
