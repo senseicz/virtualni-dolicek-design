@@ -173,9 +173,9 @@ gulp.task('images', function (cb) {
 gulp.task('mocks', function () {
 		return gulp.src(cfg.SRC_PATH + cfg.MOCK_DIR + '/[^_]*.{html,shtml}')
 			.pipe(plugins.ssi({
-				root: cfg.SRC_PATH + cfg.MOCK_DIR,
-				ext: 'html'
+				root: cfg.SRC_PATH + cfg.MOCK_DIR
 			}))
+			.pipe(plugins.rename({extname: '.html'}))
 			.pipe(gulp.dest(cfg.OUT_PATH));
 })
 
