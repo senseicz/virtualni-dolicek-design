@@ -15,6 +15,11 @@
   background: $panel-bg;
   border-bottom: 1px solid $green;
   margin-bottom: $grid-gutter-width * 2;
+
+	@include media($screen-sm-min) {
+		background: $green;
+		border-bottom-color: $white;
+	}
 }
 
 .m-page-header {
@@ -89,6 +94,28 @@
 	}
 
 	@include media($screen-sm-min) {
+		a {
+	    color: $white;
+	  }
+
+		.social-nav {
+			.icon-facebook:before {
+	      @extend %icon-facebook-box-white-sm;
+	    }
+
+	    .icon-twitter:before {
+	      @extend %icon-twitter-box-white-sm;
+	    }
+
+	    .icon-youtube:before {
+	      @extend %icon-youtube-play-white-sm;
+	    }
+
+	    .icon-instagram:before {
+	      @extend %icon-instagram-white-sm;
+	    }
+		}
+
 		.navbar-collapse {
 			padding-left: 0;
 			padding-right: 0;

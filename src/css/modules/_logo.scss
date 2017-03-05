@@ -65,4 +65,14 @@ $logo-height: 65px;
 			font-size: 9px;
 		}
 	}
+
+	@include media($screen-sm-min) {
+		&:before {
+			@extend %logo-white-sm;
+		}
+
+		.link {
+			color: $white;
+		}
+	}
 }
