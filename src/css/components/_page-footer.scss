@@ -9,6 +9,11 @@
 	margin-top: $space-xl;
 	background: $gainsboro;
 	border-top: 1px solid $silver;
+
+	@include media($screen-sm-min) {
+		background: $green;
+		border-top-color: $white;
+	}
 }
 
 .m-page-footer {
@@ -98,6 +103,34 @@
 	@include media(0, $screen-xs-max) {
 		.text-left, .text-right {
 			text-align: center;
+		}
+	}
+
+	@include media($screen-sm-min) {
+		.legal-nav {
+			&, & a {
+				color: rgba($white, 0.9);
+			}
+		}
+
+		hr {
+			border-color: $white;
+			opacity: 0.5;
+		}
+
+		.decorated {
+			@extend %logo-white-sm;
+			opacity: 0.5;
+
+			&:before, &:after {
+				border-color: $white;
+			}
+		}
+
+		.sponsors {
+			img, a:hover img, a:focus img {
+				filter: brightness(0) invert(1);
+			}
 		}
 	}
 }

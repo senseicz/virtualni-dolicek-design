@@ -54,6 +54,16 @@
 	}
 
 	@include media($screen-sm-min) {
+		.icon-home:after {
+			@extend %icon-home-outline-white-sm;
+		}
+
+		.dropdown {
+			.icon-chevron-down:after {
+				@extend %icon-chevron-down-white-sm;
+			}
+		}
+
 		.list-unstyled {
 			margin-left: -$space-md;
 			margin-bottom: 0;

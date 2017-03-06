@@ -12,19 +12,25 @@ $variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $whit
 // Image color variants // ------------------------------------------------------
 @mixin image-variants($name, $colors) {
 	@each $variant, $i in $colors {
-			%#{$name}-#{$variant} {
+		%#{$name}-#{$variant} {
+			@include svg-image($name, $i);
+		}
+
+		@include media($screen-sm-min) {
+			%#{$name}-#{$variant}-sm {
 				@include svg-image($name, $i);
 			}
+		}
 	}
 }
 
 // Usage: @extend %(name)-(variant)
 // e.g. @extend %icon-email-blue
-@include image-variants(logo, (green: $green, grey: $grey, gainsboro: $gainsboro, whitesmoke: $whitesmoke));
+@include image-variants(logo, (green: $green, grey: $grey, gainsboro: $gainsboro, whitesmoke: $whitesmoke, white: $white));
 @include image-variants(icon-magnify, $variants);
 @include image-variants(icon-soccer, (whitesmoke: $whitesmoke, grey: $grey));
 @include image-variants(icon-gift, (grey: $grey));
-@include image-variants(icon-home-outline, (grey: $grey));
+@include image-variants(icon-home-outline, (grey: $grey, white: $white));
 @include image-variants(icon-account-multiple-outline, (grey: $grey));
 @include image-variants(icon-chevron-up, $variants);
 @include image-variants(icon-chevron-down, $variants);
@@ -51,8 +57,8 @@ $variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $whit
 @include image-variants(icon-account-circle, $variants);
 @include image-variants(icon-plus-circle-outline, $variants);
 @include image-variants(icon-alert-circle-outline, $variants);
-@include image-variants(icon-facebook-box, (blue: $facebook-blue));
-@include image-variants(icon-instagram, (grey: $instagram-grey));
-@include image-variants(icon-twitter-box, (blue: $twitter-blue));
-@include image-variants(icon-google-plus-box, (red: $google-plus-red));
-@include image-variants(icon-youtube-play, (red: $youtube-play-red));
+@include image-variants(icon-facebook-box, (blue: $facebook-blue, white: $white));
+@include image-variants(icon-instagram, (grey: $instagram-grey, white: $white));
+@include image-variants(icon-twitter-box, (blue: $twitter-blue, white: $white));
+@include image-variants(icon-google-plus-box, (red: $google-plus-red, white: $white));
+@include image-variants(icon-youtube-play, (red: $youtube-play-red, white: $white));
