@@ -5,13 +5,7 @@
 .w-page {
   min-height: 100%;
   position: relative;
-	background: $background-color;
-}
-
-.w-page-content {
-	&, > a {
-		color: $content-text-color;
-	}
+	background: $whitesmoke;
 }
 
 #es-strip-container {
