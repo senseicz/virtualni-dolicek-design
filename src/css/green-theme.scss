@@ -1,0 +1,18 @@
+// Theme variables
+@import "utilities/colors";
+
+.w-page {
+	background-color: rgba($green, 0.65);
+}
+
+.w-page-content {
+	&, a {
+		color: $white;
+	}
+
+	.panel {
+		&, a {
+			color: $black;
+		}
+	}
+}
