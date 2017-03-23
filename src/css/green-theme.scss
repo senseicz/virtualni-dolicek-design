@@ -11,7 +11,7 @@
 	}
 
 	.panel {
-		&, a {
+		&, a:not(.text-distinct) {
 			color: $black;
 		}
 	}

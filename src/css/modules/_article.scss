@@ -32,6 +32,12 @@
 		background: $green;
 		color:$white;
 		padding: 0 $space-xs;
+
+		&.update {
+			background: $yellow;
+			color: $black;
+			font-weight: 700;
+		}
 	}
 
 	.icon-photo:before {

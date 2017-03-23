@@ -28,7 +28,7 @@ $variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $whit
 // e.g. @extend %icon-email-blue
 @include image-variants(logo, (green: $green, grey: $grey, gainsboro: $gainsboro, whitesmoke: $whitesmoke, white: $white));
 @include image-variants(icon-magnify, $variants);
-@include image-variants(icon-soccer, (whitesmoke: $whitesmoke, grey: $grey));
+@include image-variants(icon-soccer, (white: $white, whitesmoke: $whitesmoke, grey: $grey));
 @include image-variants(icon-gift, (grey: $grey));
 @include image-variants(icon-home-outline, (grey: $grey, white: $white));
 @include image-variants(icon-account-multiple-outline, (grey: $grey));
@@ -57,6 +57,10 @@ $variants: (blue: $blue, red: $red, green: $green, orange: $orange, white: $whit
 @include image-variants(icon-account-circle, $variants);
 @include image-variants(icon-plus-circle-outline, $variants);
 @include image-variants(icon-alert-circle-outline, $variants);
+@include image-variants(icon-arrow-down-bold, $variants);
+@include image-variants(icon-arrow-up-bold, $variants);
+@include image-variants(icon-football-boot, $variants);
+@include image-variants(icon-football-uniform, $variants);
 @include image-variants(icon-facebook-box, (blue: $facebook-blue, white: $white));
 @include image-variants(icon-instagram, (grey: $instagram-grey, white: $white));
 @include image-variants(icon-twitter-box, (blue: $twitter-blue, white: $white));
