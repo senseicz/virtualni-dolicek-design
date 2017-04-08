@@ -16,6 +16,45 @@ th {
 		background: $onyx;
 		color: $white;
 		border-bottom: 4px solid $green;
+
+		.icon:before {
+			margin-left: $space-xs;
+		}
+
+		.icon-card-red:before, .icon-card-yellow:before {
+			width: $space-md;
+			height: $space-lg;
+			margin-right: $space-sm;
+			margin-top: 2px;
+		}
+
+		.icon-card-red:before {
+			background-color: $red;
+		}
+
+		.icon-card-yellow:before {
+			background-color: $yellow;
+		}
+
+		.icon-ball:before {
+			@extend %icon-soccer-white;
+		}
+
+		.icon-change-in:before {
+			@extend %icon-arrow-up-bold-white;
+		}
+
+		.icon-change-out:before {
+			@extend %icon-arrow-down-bold-white;
+		}
+
+		.icon-assist:before {
+			@extend %icon-football-boot-white;
+		}
+
+		.icon-team-core:before {
+			@extend %icon-football-uniform-white;
+		}
 	}
 
 	> tbody > tr > td {
